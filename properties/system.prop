@@ -9,6 +9,7 @@ bluetooth.sco.disable_enhanced_connection=true
 pm.dexopt.downgrade_after_inactive_days=5
 persist.bg.dexopt.enable=true
 pm.dexopt.shared=quicken
+dalvik.vm.dex2oat64.enabled=true
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
