@@ -357,9 +357,6 @@
    <bool name="config_fingerprintSupportsGestures">true</bool>
    <bool name="config_lowPowerStandbySupported">true</bool>
    <bool name="config_setColorTransformAccelerated">true</bool>
-   <bool name="config_sf_limitedAlpha">true</bool>
-   <bool name="config_sf_slowBlur">false</bool>
-   <bool name="config_zramWriteback">true</bool>
    <bool name="device_idle_use_mode_manager">true</bool>
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
