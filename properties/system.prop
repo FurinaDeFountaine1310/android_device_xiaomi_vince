@@ -11,6 +11,9 @@ persist.bg.dexopt.enable=true
 pm.dexopt.shared=quicken
 dalvik.vm.dex2oat64.enabled=true
 
+# Disable MTE Async for system server
+arm64.memtag.process.system_server=off
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
