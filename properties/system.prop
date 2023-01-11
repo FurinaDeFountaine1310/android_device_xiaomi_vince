@@ -61,6 +61,10 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# Media Transcode
+persist.sys.fuse.transcode_user_control=true
+persist.sys.fuse.transcode_enabled=false
+
 # Display
 debug.sf.enable_transaction_tracing=false
 debug.sf.predict_hwc_composition_strategy=0
@@ -76,10 +80,8 @@ ro.surface_flinger.set_display_power_timer_ms=10000
 ro.surface_flinger.set_touch_timer_ms=5000
 ro.surface_flinger.set_idle_timer_ms=9000
 ro.surface_flinger.running_without_sync_framework=true
-persist.sys.fuse.transcode_user_control=true
-persist.sys.fuse.transcode_enabled=false
 vendor.display.disable_scaler=1
-ro.build.shutdown_timeout=2
+vendor.display.perf_hint_window=50
 vendor.display.disable_metadata_dynamic_fps=1
 renderthread.skia.reduceopstasksplitting=true
 ro.hwui.render_ahead=1
