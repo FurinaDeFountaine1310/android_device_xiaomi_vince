@@ -57,6 +57,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiDoze
 
+# Prebuilt
+PRODUCT_PACKAGES += \
+    Camera
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
