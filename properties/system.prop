@@ -2,6 +2,9 @@
 # system.prop for msm8953
 #
 
+# Bluetooth
+bluetooth.sco.disable_enhanced_connection=true
+
 # Dex2oat
 pm.dexopt.downgrade_after_inactive_days=5
 persist.bg.dexopt.enable=true
