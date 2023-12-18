@@ -76,6 +76,8 @@ vendor.display.disable_metadata_dynamic_fps=1
 renderthread.skia.reduceopstasksplitting=true
 ro.hwui.render_ahead=1
 debug.cpurend.vsync=false
+ro.egl.blobcache.multifile=true
+ro.egl.blobcache.multifile_limit=33554432
 
 # Perf
 ro.vendor.qti.sys.fw.bservice_enable=true
