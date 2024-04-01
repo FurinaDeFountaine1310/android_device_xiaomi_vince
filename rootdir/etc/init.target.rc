@@ -142,6 +142,9 @@ service energy-awareness /system/vendor/bin/energy-awareness
     group system
     oneshot
 
+on property:init.svc.vendor.qcrild=running
+    restart vendor.radio-config-1-1-wrapper
+
 service vendor.hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
