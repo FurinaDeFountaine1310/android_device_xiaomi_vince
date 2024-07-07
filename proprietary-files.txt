@@ -912,6 +912,5 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc
 -vendor/etc/vintf/manifest/android.hardware.drm-service.widevine.xml
 vendor/lib/libwvaidl.so
 
-# Wi-Fi - from daisy
-vendor/bin/wcnss_service
+# Wi-Fi
 vendor/bin/hw/wpa_supplicant
