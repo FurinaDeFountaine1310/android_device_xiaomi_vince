@@ -396,3 +396,6 @@ firmware_directories /vendor/firmware_mnt/image/
 
 # Wake gesture
 /sys/devices/platform/soc/78b7000.i2c/i2c-3/3-0020/input/input2 wake_gesture 0660    system  system
+
+# Charger
+/sys/class/power_supply/battery  battery_charging_enabled  0660  system  system
