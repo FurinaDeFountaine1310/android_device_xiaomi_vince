@@ -29,6 +29,8 @@ TARGET_SUPPORT_HAL1 := false
 
 # Kernel
 TARGET_KERNEL_CONFIG := vince_defconfig
+TARGET_KERNEL_CLANG_COMPILE := true
+TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/azure-clang
 
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
