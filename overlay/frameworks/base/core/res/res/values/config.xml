@@ -14,7 +14,15 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-   <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-        autodetected from the Configuration. -->
    <bool name="config_showNavigationBar">true</bool>
+   <bool name="config_ui_enableFadingMarquee">true</bool>
+   <bool name="config_supportSmartPixels">true</bool>
+   <bool name="config_navBarDefaultTransparent">true</bool>
+   <bool name="config_displayWhiteBalanceAvailable">true</bool>
+   <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+   <bool name="config_dozeAlwaysOnEnabled">true</bool>
+   <bool name="config_sustainedPerformanceModeSupported">true</bool>
+   <integer name="config_networkAvoidBadWifi">0</integer>
+   <integer name="config_globalActionsKeyTimeout">250</integer>
+   <integer name="config_shutdownBatteryTemperature">510</integer>
 </resources>

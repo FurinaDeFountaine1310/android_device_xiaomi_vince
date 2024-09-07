@@ -50,7 +50,8 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc
+    init.recovery.qcom.rc \
+    init.furina.rc
 
 # VNDK
 PRODUCT_COPY_FILES += \
