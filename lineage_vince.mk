@@ -24,6 +24,7 @@ TARGET_ENABLE_BLUR := false
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 WITH_GMS := false
 RISING_BUILDTYPE := COMMUNITY
+PRODUCT_NO_CAMERA := false
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince

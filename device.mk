@@ -66,3 +66,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
+
+# Signed
+-include vendor/lineage-priv/keys/keys.mk

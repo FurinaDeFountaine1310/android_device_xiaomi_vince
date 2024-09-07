@@ -31,7 +31,12 @@ TARGET_SUPPORT_HAL1 := false
 TARGET_KERNEL_CONFIG := vince_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_PATH := $(shell pwd)/prebuilts/clang/host/linux-x86/azure-clang
-
+KBUILD_BUILD_USER := Rsyd58
+KBUILD_BUILD_VERSION := 1
+KBUILD_BUILD_HOST := non-pangu-pod
+TZ := Asia/Jakarta
+BUILD_USERNAME := Rsyd58
+BUILD_HOSTNAME := non-pangu-pod
 # Partitions
 BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
