@@ -50,8 +50,7 @@ PRODUCT_PACKAGES += \
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.recovery.qcom.rc \
-    init.furina.rc
+    init.recovery.qcom.rc
 
 # VNDK
 PRODUCT_COPY_FILES += \
@@ -67,5 +66,5 @@ PRODUCT_SOONG_NAMESPACES += \
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/vince/vince-vendor.mk)
 
-# Signed
--include vendor/lineage-priv/keys/keys.mk
+# Signing keys
+$(call inherit-product, vendor/rsyd-keys/product.mk)

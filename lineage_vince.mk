@@ -23,8 +23,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 WITH_GMS := false
-RISING_BUILDTYPE := COMMUNITY
+RISING_BUILDTYPE := Community
 PRODUCT_NO_CAMERA := false
+TARGET_SHIP_LINEAGE_PREBUILTS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
