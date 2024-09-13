@@ -53,10 +53,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# Device-specific Settings
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # Prebuilt
 PRODUCT_PACKAGES += \
     Camera
