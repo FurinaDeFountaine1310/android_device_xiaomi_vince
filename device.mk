@@ -53,10 +53,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     AntHalService
 
-# Prebuilt
-PRODUCT_PACKAGES += \
-    Camera
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
@@ -323,10 +319,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.post_boot.sh
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    removepackages
 
 # RIL
 PRODUCT_PACKAGES += \

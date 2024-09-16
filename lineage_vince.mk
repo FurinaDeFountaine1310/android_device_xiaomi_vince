@@ -16,10 +16,22 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Signed
--include vendor/lineage-priv/keys/keys.mk
+$(call inherit-product, vendor/rsyd-keys/product.mk)
+
+# Viper4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Flags
-TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOT_ANIMATION_RES := 1080
+RISING_MAINTAINER := Rsyd58
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+WITH_GMS := false
+RISING_BUILDTYPE := COMMUNITY
+PRODUCT_NO_CAMERA := false
+TARGET_SHIP_LINEAGE_PREBUILTS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -33,7 +45,7 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys"
+    TARGET_PRODUCT="vince" \
+    RISING_MAINTAINER="Rsyd58" \
+    RISING_CHIPSET="Snapdragon 625"
 
-# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
-BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
