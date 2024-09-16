@@ -23,15 +23,30 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := Rsyd58
-TARGET_SUPPORTS_64_BIT_APPS := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
-TARGET_DEFAULT_PIXEL_LAUNCHER := false
-WITH_GMS := false
-RISING_BUILDTYPE := COMMUNITY
+TARGET_FACE_UNLOCK_SUPPORTED := true
 PRODUCT_NO_CAMERA := false
 TARGET_SHIP_LINEAGE_PREBUILTS := true
+TARGET_EXCLUDES_AUDIOFX := true
+
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 1
+
+# TARGET_LAUNCHER options:
+# 1 - stock (default)
+# 2 - lawnchair
+# 3 - pixel (valid only on gapps builds)
+TARGET_LAUNCHER := 1
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
+
+# Maintainer
+ALPHA_BUILD_TYPE := Community
+ALPHA_MAINTAINER := Rsyd58
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
@@ -45,7 +60,4 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT="vince" \
-    RISING_MAINTAINER="Rsyd58" \
-    RISING_CHIPSET="Snapdragon 625"
-
+    TARGET_PRODUCT="vince"
