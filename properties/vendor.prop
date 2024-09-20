@@ -162,8 +162,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/config
 
 # Media
 av.debug.disable.pers.cache=1
-debug.stagefright.omx_default_rank.sw-audio=1
-debug.stagefright.omx_default_rank=0
 media.aac_51_output_enabled=true
 media.msm8956hw=0
 vendor.mm.enable.qcom_parser=1048575
