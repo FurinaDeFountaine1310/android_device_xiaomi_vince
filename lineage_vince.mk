@@ -45,7 +45,9 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_PRODUCT="vince" \
-    RISING_MAINTAINER="Rsyd58" \
-    RISING_CHIPSET="Snapdragon 625"
+    RISING_MAINTAINER="Rsyd58"\
+    RISING_CHIPSET="Snapdragon 625" \
+    BuildDesc="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys" \
+    BuildFingerprint=xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys \
+    DeviceProduct=vince
 
