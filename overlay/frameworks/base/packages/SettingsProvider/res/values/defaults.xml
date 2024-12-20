@@ -21,6 +21,17 @@
     <!-- Disable UI touch sounds by default -->
     <bool name="def_sound_effects_enabled">false</bool>
 
+    <!-- our stuff -->
+    <bool name="def_double_tap_to_wake">false</bool>
+    <bool name="def_enable_back_animation">true</bool>
+    <bool name="def_enable_non_resizable_multi_window">true</bool>
+    <bool name="def_one_handed_mode_enabled">true</bool>
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
+    <bool name="def_swipe_bottom_to_notification_enabled">true</bool>
+    <bool name="def_vibrate_when_ringing">true</bool>
+    <bool name="def_wifi_wakeup_enabled">false</bool>
+    <string name="def_device_name_simple" translatable="false">Xiaomi Redmi 5 Plus</string>
+
     <!-- Set Window animation scale to 50% by default -->
     <fraction name="def_window_animation_scale">50%</fraction>
 
