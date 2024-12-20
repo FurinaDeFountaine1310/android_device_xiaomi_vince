@@ -340,7 +340,27 @@
    <integer name="config_networkAvoidBadWifi">0</integer>
    <integer name="config_globalActionsKeyTimeout">250</integer>
    <integer name="config_shutdownBatteryTemperature">510</integer>
+   <integer name="config_supportsNonResizableMultiWindow">1</integer>
    <string name="config_icon_mask" translatable="false">M99,50C99,6.935,77.063,1,50,1C22.935,1,1,6.935,1,50c0,43.063,21.935,49,49,49C77.063,99,99,93.063,99,50Z</string>
+   <bool name="config_enableDefaultNotes">true</bool>
+   <bool name="config_bg_current_drain_monitor_enabled">true</bool>
+   <bool name="config_bg_prompt_abusive_apps_to_bg_restricted">true</bool>
+   <bool name="config_bg_prompt_fgs_with_noti_to_bg_restricted">true</bool>
+   <bool name="config_bg_current_drain_high_threshold_by_bg_location">true</bool>
+   <bool name="config_bg_current_drain_event_duration_based_threshold_enabled">true</bool>
+   <bool name="config_bg_current_drain_auto_restrict_abusive_apps">true</bool>
+   <bool name="config_enableAppWidgetService">true</bool>
+   <bool name="config_enableBurnInProtection">true</bool>
+   <bool name="config_enableHapticTextHandle">true</bool>
+   <bool name="config_enableIdleScreenBrightnessMode">true</bool>
+   <bool name="config_enableLockScreenRotation">true</bool>
+   <bool name="config_fingerprintSupportsGestures">true</bool>
+   <bool name="config_lowPowerStandbySupported">true</bool>
+   <bool name="config_setColorTransformAccelerated">true</bool>
+   <bool name="config_sf_limitedAlpha">true</bool>
+   <bool name="config_sf_slowBlur">false</bool>
+   <bool name="config_zramWriteback">true</bool>
+   <bool name="device_idle_use_mode_manager">true</bool>
 
     <!-- If true, the screen can be rotated via the accelerometer in all 4
          rotations as the default behavior. -->
