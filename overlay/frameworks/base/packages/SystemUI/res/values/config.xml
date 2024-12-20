@@ -27,4 +27,6 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
+    <!-- Show Battery Health -->
+    <bool name="config_battery_index_enabled">true</bool>
 </resources>
