@@ -168,63 +168,53 @@ service ppd /vendor/bin/mm-pp-dpps
     socket pps stream 0660 system system
     disabled
 
-
-service hw /system/bin/sh -c "service call SurfaceFlinger 1008 i32 1"
-    seclabel u:r:shell:s0
-    user root
-    oneshot
-    disabled
-
 service hiderror /system/bin/sh -c "settings put global hide_error_dialogs 1"
     seclabel u:r:shell:s0
     user root
     oneshot
-    disabled
+    disabled  
 
-service wndw /system/bin/sh -c "settings put global window_animation_scale 0.5"
+service gms1 /system/bin/sh -c "pm disable com.google.android.gms/com.google.android.gms.auth.managed.admin.DeviceAdminReceiver"
+    seclabel u:r:shell:s0
+    user root
+    oneshot
+    disabled
+    
+service gms3 /system/bin/sh -c "pm disable com.google.android.gms/com.google.android.gms.mdm.receivers.MdmDeviceAdminReceiver"
     seclabel u:r:shell:s0
     user root
     oneshot
     disabled
 
-service trnst /system/bin/sh -c "settings put global transition_animation_scale 0.5"
-    seclabel u:r:shell:s0
-    user root
-    oneshot
-    disabled
-
-service anmtr /system/bin/sh -c "settings put global animator_duration_scale 0.5"
-    seclabel u:r:shell:s0
-    user root
-    oneshot
-    disabled
-
-on early-boot
-    start anmtr
-    start wndw
-    start trnst
-    start hw
-    start hiderror
-
-on boot
-    start hiderror
+on boot    
+    # Update cpusets on boot and we want better load balancing
+    write /dev/cpuset/top-app/cpus 0-7
+    write /dev/cpuset/top-app/mems 0
+    write /dev/cpuset/foreground/cpus 0-6
+    write /dev/cpuset/foreground/mems 0
+    write /dev/cpuset/background/cpus 0-1
+    write /dev/cpuset/background/mems 0
+    write /dev/cpuset/system-background/cpus 0-3
+    write /dev/cpuset/system-background/mems 0
+    write /dev/cpuset/restricted/cpus 0-3
+    write /dev/cpuset/restricted/mems 0
 
 on property:sys.boot_completed=1
-    start hw
     start hiderror
-    start anmtr
-    start wndw
-    start trnst
+    start gms1
+    start gms3
     chown system system /sys/class/leds/led:torch_1/max_brightness
     chown system graphics /sys/class/graphics/fb0/idle_state
+    chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
     chmod 0444 /sys/class/graphics/fb0/idle_state
+    chmod 0644 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
     write /sys/class/leds/led:torch_1/max_brightness 0
     write /sys/class/graphics/fb0/idle_time 100
-    write /proc/sys/vm/vfs_cache_pressure 100
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 1401600
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 2016000
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 2208000
     write /proc/sys/vm/user_reserve_kbytes 0
     write /proc/sys/vm/admin_reserve_kbytes 0
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so,com.miHoYo.,libunity.so,libfb.so,liblogic.so,libssgamesdkcronet.so,libil2cpp.so,com.activision."
-    write /proc/sys/kernel/sched_lib_mask_force 255
 
 on boot
     # add for goodix 
