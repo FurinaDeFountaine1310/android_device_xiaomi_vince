@@ -1,2 +1,6 @@
+#
+# odm.prop for msm8953
+#
+
 # Fwk detect
 ro.vendor.qti.va_odm.support=1
