@@ -46,3 +46,10 @@ ro.hwui.render_ahead=1
 debug.cpurend.vsync=false
 debug.hwui.use_hint_manager=true
 debug.hwui.target_cpu_time_percent=30
+
+# Project Infinity-X Specs
+ro.infinity.soc=Snapdragon 625
+ro.infinity.battery=4000 mAh
+ro.infinity.display=1080 x 2160, 60 Hz
+ro.infinity.camera=12MP
+ro.product.marketname=Xiaomi Redmi 5 Plus
