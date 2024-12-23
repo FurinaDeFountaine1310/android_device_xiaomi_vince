@@ -106,7 +106,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
-    vendor/infinity/config/device_framework_matrix.xml
+    $(DEVICE_PATH)/vintf/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/vintf/compatibility_matrix.xml
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/vintf/framework_manifest.xml
