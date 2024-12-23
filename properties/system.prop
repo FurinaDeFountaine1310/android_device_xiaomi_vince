@@ -2,6 +2,9 @@
 # system.prop for msm8953
 #
 
+# Audio
+vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
+
 # Bluetooth
 bluetooth.sco.disable_enhanced_connection=true
 
