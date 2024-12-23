@@ -9,8 +9,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk)
 
-# Inherit some common Project Infinity-X stuff.
-$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
@@ -25,17 +25,11 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_BLUR := false
-WITH_GAPPS := false
-INFINITY_BUILD_TYPE := Community
-INFINITY_MAINTAINER := CitlaliItztli
-USE_MOTO_CALCULATOR := true
 PRODUCT_NO_CAMERA := false
-TARGET_DISABLE_EPPE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := infinity_vince
+PRODUCT_NAME := voltage_vince
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus

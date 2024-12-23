@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_vince.mk
+    $(LOCAL_DIR)/voltage_vince.mk

@@ -18,6 +18,9 @@
     <!-- Show battery cycle count -->
     <bool name="config_show_battery_cycle_count" translatable="false">true</bool>
 
+    <!-- VoltageOS Maintainer -->
+    <string name="voltage_maintainer" translatable="false">シトラリ</string>
+
     <!-- Battery Health enable -->
     <bool name="config_supportBatteryHealth">true</bool>
     <!-- Battery Health -->
