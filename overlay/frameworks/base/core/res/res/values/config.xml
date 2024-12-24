@@ -336,7 +336,7 @@
    <bool name="config_sustainedPerformanceModeSupported">true</bool>
    <integer name="config_networkAvoidBadWifi">0</integer>
    <integer name="config_globalActionsKeyTimeout">250</integer>
-   <integer name="config_shutdownBatteryTemperature">510</integer>
+   <integer name="config_shutdownBatteryTemperature">600</integer>
    <integer name="config_supportsNonResizableMultiWindow">1</integer>
    <string name="config_icon_mask" translatable="false">M99,50C99,6.935,77.063,1,50,1C22.935,1,1,6.935,1,50c0,43.063,21.935,49,49,49C77.063,99,99,93.063,99,50Z</string>
    <bool name="config_enableDefaultNotes">true</bool>
