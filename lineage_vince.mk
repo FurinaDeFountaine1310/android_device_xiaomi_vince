@@ -29,7 +29,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 WITH_GMS := false
-RISING_BUILDTYPE := COMMUNITY
+RISING_BUILDTYPE := UNOFFICIAL
 PRODUCT_NO_CAMERA := false
 TARGET_SHIP_LINEAGE_PREBUILTS := true
 
@@ -45,8 +45,8 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RISING_MAINTAINER="Rsyd58"\
-    RISING_CHIPSET="Snapdragon 625" \
+    RisingMaintainer="Rsyd58" \
+    RisingChipset="Snapdragon 625" \
     BuildDesc="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys" \
     BuildFingerprint=xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys \
     DeviceProduct=vince
