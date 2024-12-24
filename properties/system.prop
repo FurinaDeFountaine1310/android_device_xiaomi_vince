@@ -32,6 +32,9 @@ arm64.memtag.process.system_server=off
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Fs-Verity
+ro.apk_verity.mode=2
+
 # HWUI Properties
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
