@@ -139,3 +139,16 @@ persist.mm.sta.enable=0
 
 # System Property to set gesture mode as default
 ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
+# Spoof
+ro.boot.flash.locked=1
+ro.boot.veritymode=enforcing
+ro.boot.vbmeta.device_state=locked
+ro.boot.warranty_bit=0
+ro.secureboot.lockstate=locked
+ro.boot.verifiedbootstate=green
+ro.boot.flash.locked=1
+androidboot.flash.locked=1
+ro.crypto.state=encrypted
+ro.crypto.type=block
+init.svc.flash_recovery=stopped
