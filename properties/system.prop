@@ -48,6 +48,13 @@ ro.hwui.text_large_cache_height=1024
 # Cutoff voltage at 3400mV
 ro.cutoff_voltage_mv=3400
 
+# Iorapd
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+persist.device_config.runtime_native_boot.iorap_perfetto_enable=false
+
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
