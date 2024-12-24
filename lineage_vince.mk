@@ -23,7 +23,7 @@ $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := Rsyd58
+RISING_MAINTAINER := CitlaliItztli
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
@@ -45,7 +45,7 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="Rsyd58" \
+    RisingMaintainer="CitlaliItztli" \
     RisingChipset="Snapdragon 625" \
     BuildDesc="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys" \
     BuildFingerprint=xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys \
