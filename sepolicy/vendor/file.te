@@ -1,0 +1,14 @@
+# Boot reason
+type proc_boot_reason, fs_type, proc_type;
+
+# Camera
+type camera_socket, file_type, data_file_type;
+
+# Fingerprint
+type sysfs_fingerprint, sysfs_type, fs_type;
+
+# Rmt
+type debugfs_rmt, debugfs_type, fs_type;
+
+# Wake gesture
+type sysfs_wakegesture, fs_type, sysfs_type;

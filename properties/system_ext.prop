@@ -1,0 +1,10 @@
+#
+# system_ext.prop for vince
+#
+
+# DPM
+persist.vendor.dpm.feature=1
+persist.vendor.dpm.loglevel=0
+
+# Hardware Rev based on Bootloader ver
+ro.boot.hardware.revision=MSM8953_DAISY1.0_20191108143506
