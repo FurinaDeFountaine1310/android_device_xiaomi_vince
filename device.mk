@@ -17,7 +17,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Overlay
+# Prebuilt
 PRODUCT_PACKAGES += \
     CertifiedPropsOverlay \
     AndroidAMOverlay \
@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     AndroidSettingsXiaomiMSM8953Overlay \
     AndroidSystemUIOverlay \
     AndroidSystemUIGXOverlay \
-    AndroidSystemUIVinceOverlay
+    AndroidSystemUIVinceOverlay \
+    LatinImeGoogle32Lite
 
 # Permissions
 PRODUCT_COPY_FILES += \

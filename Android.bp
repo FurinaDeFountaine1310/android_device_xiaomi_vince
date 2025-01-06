@@ -33,3 +33,16 @@ install_symlink {
    installed_location: "firmware/wlan/prima/WCNSS_wlan_dictionary.dat",
    symlink_target: "/mnt/vendor/persist/WCNSS_wlan_dictionary.dat",
 }
+
+android_app_import {
+    name: "LatinImeGoogle32Lite",
+    owner: "google",
+    apk: "prebuilt/LatinImeGoogle32Lite/LatinImeGoogle32Lite.apk",
+    preprocessed: true,
+    presigned: true,
+    product_specific: true,
+    dex_preopt: {
+        enabled: false,
+    },
+    overrides: ["LatinIME"],
+}
