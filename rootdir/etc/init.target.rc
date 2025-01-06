@@ -27,7 +27,7 @@
 #
 #
 on early-init
-    write /proc/sys/kernel/sched_boost 1
+    write /proc/sys/kernel/sched_boost 0
     symlink /data/tombstones /tombstones
 
 on fs
@@ -161,6 +161,8 @@ on charger
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
     start vendor.hvdcp_opti
     start thermal-engine
+    write /sys/devices/platform/soc/78b6000.i2c/i2c-2/2-0045/leds/red/max_brightness 255
+    write /sys/devices/platform/soc/78b6000.i2c/i2c-2/2-0045/leds/red/brightness 255
 
 service ppd /vendor/bin/mm-pp-dpps
     class late_start
@@ -204,18 +206,25 @@ on property:sys.boot_completed=1
     start hiderror
     start gms1
     start gms3
+    start thermal-engine
+    restart thermal-engine
+    start android.thermal-hal
+    restart android.thermal-hal
     chown system system /sys/class/leds/led:torch_1/max_brightness
     chown system graphics /sys/class/graphics/fb0/idle_state
     chown system system /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
     chmod 0444 /sys/class/graphics/fb0/idle_state
     chmod 0644 /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq
+    chmod 0440 /proc/net/unix
     write /sys/class/leds/led:torch_1/max_brightness 0
     write /sys/class/graphics/fb0/idle_time 100
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 1401600
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 2016000
     write /sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq 2208000
+    write /proc/sys/vm/vfs_cache_pressure 100
     write /proc/sys/vm/user_reserve_kbytes 0
     write /proc/sys/vm/admin_reserve_kbytes 0
+    write /proc/sys/vm/swappiness 100
 
 on boot
     # add for goodix 

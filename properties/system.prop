@@ -1,5 +1,5 @@
 #
-# system.prop for msm8953
+# system.prop for vince
 #
 
 # Audio
@@ -8,13 +8,20 @@ vendor.fastrpc.disable.adsprpcd_sensorspd.daemon=1
 # Bluetooth
 bluetooth.sco.disable_enhanced_connection=true
 
+# Blur
+ro.launcher.blur.appLaunch=0
+persist.sysui.disableBlur=false
+
 # Dex2oat
-persist.bg.dexopt.enable=true
-pm.dexopt.shared=quicken
+pm.dexopt.shared=verify
 dalvik.vm.dex2oat64.enabled=true
 
 # Disable MTE Async for system server
 arm64.memtag.process.system_server=off
+
+# FUSE
+persist.sys.fuse.passthrough.enable=true
+persist.fuse_sdcard=true
 
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
@@ -25,30 +32,15 @@ ro.apk_verity.mode=2
 # Cutoff voltage at 3400mV
 ro.cutoff_voltage_mv=3400
 
-# Iorapd
-ro.iorapd.enable=false
-iorapd.perfetto.enable=false
-iorapd.readahead.enable=false
-persist.device_config.runtime_native_boot.iorap_readahead_enable=false
-persist.device_config.runtime_native_boot.iorap_perfetto_enable=false
-
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
-
-# Media
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-ro.media.xml_variant.codecs=_vendor
 
 # Radio
 ro.telephony.block_binder_thread_on_incoming_calls=false
 persist.dbg.ims_volte_enable=1
-persist.dbg.vt_avail_ovr=1
-persist.radio.rat_on=combine
+persist.dbg.vt_avail_ovr=0
 persist.dbg.volte_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-persist.radio.data_con_rprt=1
-persist.radio.calls.on.ims=1
-persist.radio.VT_ENABLE=1
+persist.dbg.wfc_avail_ovr=0
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugDataPathLogs=1
@@ -58,15 +50,6 @@ persist.vendor.ims.disableSigHandler=1
 # Media Transcode
 persist.sys.fuse.transcode_user_control=true
 persist.sys.fuse.transcode_enabled=false
-
-# Display
-ro.surface_flinger.enable_frame_rate_override=false
-vendor.display.perf_hint_window=50
-vendor.display.disable_partial_split=1
-ro.egl.blobcache.multifile=true
-ro.egl.blobcache.multifile_limit=33554432
-persist.debug.sf.statistics=0
-debug.sf.enable_egl_image_tracker=0
 
 # Power Save
 persist.sys.shutdown.mode=hibernate
@@ -106,3 +89,44 @@ androidboot.flash.locked=1
 ro.crypto.state=encrypted
 ro.crypto.type=block
 init.svc.flash_recovery=stopped
+
+# Display
+ro.surface_flinger.enable_frame_rate_override=false
+vendor.display.perf_hint_window=50
+vendor.display.disable_partial_split=1
+ro.egl.blobcache.multifile=true
+ro.egl.blobcache.multifile_limit=33554432
+persist.debug.sf.statistics=0
+debug.sf.enable_egl_image_tracker=0
+vendor.display.disable_metadata_dynamic_fps=1
+renderthread.skia.reduceopstasksplitting=true
+ro.hwui.render_ahead=1
+debug.cpurend.vsync=false
+ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_HDR_display=true
+ro.surface_flinger.use_color_management=true
+debug.sf.early_phase_offset_ns=1500000
+debug.sf.early_app_phase_offset_ns=1500000
+debug.sf.early_gl_phase_offset_ns=3000000
+debug.sf.early_gl_app_phase_offset_ns=15000000
+ro.surface_flinger.set_display_power_timer_ms=10000
+ro.surface_flinger.set_touch_timer_ms=5000
+ro.surface_flinger.set_idle_timer_ms=9000
+ro.surface_flinger.running_without_sync_framework=true
+vendor.display.disable_scaler=1
+debug.sf.enable_transaction_tracing=false
+ro.surface_flinger.game_default_frame_rate_override=60
+debug.graphics.game_default_frame_rate.disabled=true
+persist.wm.extensions.enabled=true
+persist.wm.extensions.activity_embedding_guard_with_android_15=false
+
+# Display - Set color mode to Adaptive by default
+persist.sys.sf.color_saturation=1.0
+persist.sys.sf.native_mode=2
+persist.sys.sf.color_mode=9
+
+# Storage
+ro.incremental.enable=true
+
+# TODO(b/120679683): disable RescueParty before all problem apps solved
+persist.sys.disable_rescue=true
