@@ -21,15 +21,17 @@ $(call inherit-product, vendor/rsyd-keys/product.mk)
 # Viper4AndroidFX
 $(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
 
+# Missi by Xiaomi
+$(call inherit-product, device/xiaomi/missi/missi.mk)
+
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := CitlaliItztli
+RISING_MAINTAINER := Shitorari
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
 TARGET_DEFAULT_PIXEL_LAUNCHER := false
 WITH_GMS := false
-RISING_BUILDTYPE := UNOFFICIAL
 PRODUCT_NO_CAMERA := false
 TARGET_SHIP_LINEAGE_PREBUILTS := true
 
@@ -45,8 +47,19 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="CitlaliItztli" \
+    RisingMaintainer="Shitorari" \
     RisingChipset="Snapdragon 625" \
-    BuildDesc="vince-user 8.1.0 OPM1.171019.019 V11.0.2.0.OEGMIXM release-keys" \
-    BuildFingerprint=xiaomi/vince/vince:8.1.0/OPM1.171019.019/V11.0.2.0.OEGMIXM:user/release-keys \
-    DeviceProduct=vince
+    DeviceProduct=vince \
+    SystemName=vince \
+    BuildFlavor=vince-user \
+    BuildNumber=OS2.6.1.0.VEGIDXM \
+    BuildFingerprint=Xiaomi/vince/vince:15/AP4A.241205.013.C1/OS2.6.1.0.VEGIDXM:user/release-keys \
+    BuildDesc="vince-user 15 AP4A.241205.013.C1 OS2.6.1.0.VEGIDXM release-keys"
+
+PRODUCT_VENDOR_PROPERTIES += \
+    dalvik.vm.heapstartsize?=8m \
+    dalvik.vm.heapgrowthlimit?=192m \
+    dalvik.vm.heapsize?=512m \
+    dalvik.vm.heaptargetutilization?=0.75 \
+    dalvik.vm.heapminfree?=512k \
+    dalvik.vm.heapmaxfree?=8m
