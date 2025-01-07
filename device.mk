@@ -404,7 +404,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi \
-    bootable/deprecated-ota
+    bootable/deprecated-ota \
+    kernel/xiaomi/vince \
+    vendor/xiaomi/vince \
+    vendor/rsyd-keys \
+    packages/apps/ViPER4AndroidFX \
+    prebuilts/clang/host/linux-x86/azure-clang
 
 # Telephony
 PRODUCT_PACKAGES += \

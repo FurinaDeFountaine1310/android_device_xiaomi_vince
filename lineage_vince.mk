@@ -26,7 +26,6 @@ $(call inherit-product, device/xiaomi/missi/missi.mk)
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := Shitorari
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := false
@@ -47,14 +46,12 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="Shitorari" \
-    RisingChipset="Snapdragon 625" \
     DeviceProduct=vince \
     SystemName=vince \
     BuildFlavor=vince-user \
-    BuildNumber=OS2.6.1.0.VEGIDXM \
-    BuildFingerprint=Xiaomi/vince/vince:15/AP4A.241205.013.C1/OS2.6.1.0.VEGIDXM:user/release-keys \
-    BuildDesc="vince-user 15 AP4A.241205.013.C1 OS2.6.1.0.VEGIDXM release-keys"
+    BuildNumber=OS2.0.11.1.VEGIDXM.BETA \
+    BuildFingerprint=Xiaomi/vince/vince:15/AP4A.241205.013/OS2.0.11.1.VEGIDXM.BETA:user/release-keys \
+    BuildDesc="vince-user 15 AP4A.241205.013 OS2.0.11.1.VEGIDXM.BETA release-keys"
 
 PRODUCT_VENDOR_PROPERTIES += \
     dalvik.vm.heapstartsize?=8m \
