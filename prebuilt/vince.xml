@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
-    <feature name="android.hardware.audio.pro"/>
-    <feature name="android.hardware.broadcastradio"/>
-    <feature name="android.hardware.camera.ar"/>
-    <feature name="android.hardware.camera.concurrent"/>
-    <feature name="android.hardware.camera.external"/>
-    <feature name="android.hardware.ethernet"/>
-    <feature name="android.hardware.faketouch.multitouch.distinct"/>
-    <feature name="android.hardware.faketouch.multitouch.jazzhand"/>
-    <feature name="android.hardware.sensor.assist"/>
-    <feature name="android.hardware.sensor.hifi_sensors"/>
-    <feature name="android.hardware.sensor.accelerometer_limited_axes"/>
-    <feature name="android.hardware.sensor.accelerometer_limited_axes_uncalibrated"/>
-    <feature name="android.hardware.sensor.heading"/>
-    <feature name="android.hardware.sensor.dynamic.head_tracker"/>
-    <feature name="android.hardware.sensor.gyroscope_limited_axes"/>
-    <feature name="android.hardware.sensor.gyroscope_limited_axes_uncalibrated"/>
-    <feature name="android.hardware.wifi.aware"/>
-    <feature name="android.hardware.wifi.rtt"/>
+    <feature name="android.software.virtualization_framework"/>
     <feature name="android.software.app_compat_overrides"/>
     <feature name="android.software.connectionservice"/>
     <feature name="android.software.dream_overlay"/>

@@ -26,7 +26,7 @@ $(call inherit-product, device/xiaomi/missi/missi.mk)
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-RISING_MAINTAINER := CitlaliItztli
+MISTOS_MAINTAINER := CitlaliItztli
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
@@ -46,15 +46,10 @@ TARGET_VENDOR := Xiaomi
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="CitlaliItztli" \
-    RisingChipset="Qualcomm Snapdragon 625" \
+    DeviceName=vince \
     DeviceProduct=vince \
     SystemName=vince \
-    BuildFlavor=vince-user \
-    BuildNumber=OS2.0.6.2.VEGMIXM \
-    Platform_base_os=Xiaomi/msm8953/missi:15/AQ4A.250105.002.A4/OS2.0.6.0.VEGMIXM:user/release-keys \
-    BuildFingerprint=Xiaomi/vince/vince:15/AQ4A.250105.002.A4/OS2.0.6.2.VEGMIXM:user/release-keys \
-    BuildDesc="vince-user 15 AQ4A.250105.002.A4 OS2.0.6.2.VEGMIXM release-keys"
+    SystemDevice=vince
 
 PRODUCT_VENDOR_PROPERTIES += \
     dalvik.vm.heapstartsize?=8m \
