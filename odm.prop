@@ -4,3 +4,4 @@
 
 ro.surface_flinger.game_default_frame_rate_override=60
 ro.control_privapp_permissions=log
+ro.config.wallpaper=/system/vendor/etc/SoftLight.png

@@ -25,8 +25,8 @@ PRODUCT_PACKAGES += \
 TARGET_DISABLE_EPPE := true
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=Galaxy_Bells.ogg \
-    ro.config.notification_sound=Whistle.ogg \
+    ro.config.ringtone=MiRemix.ogg \
+    ro.config.notification_sound=WaterDrop.ogg \
     ro.config.alarm_alert=HomeComing.ogg
 
 # AOSP Audio
@@ -44,3 +44,17 @@ PRODUCT_COPY_FILES += \
     $(MISSI_PATH)/media/audio/Over_the_horizon.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Over_The_Horizon.ogg \
     $(MISSI_PATH)/media/audio/Spaceline.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Spaceline.ogg \
     $(MISSI_PATH)/media/audio/Whistle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Whistle.ogg
+
+# HyperOS 2.0 Default Wallpaper
+PRODUCT_COPY_FILES += \
+    $(MISSI_PATH)/prebuilt/etc/SoftLight02.png:$(TARGET_COPY_OUT_VENDOR)/etc/SoftLight.png
+
+# HyperOS 2.0 Audio
+PRODUCT_COPY_FILES += \
+    $(MISSI_PATH)/media/audio/Mi.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Mi.ogg \
+    $(MISSI_PATH)/media/audio/MiRemix.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/MiRemix.ogg \
+    $(MISSI_PATH)/media/audio/WaterDrop.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/WaterDrop.ogg \
+    $(MISSI_PATH)/media/audio/NotificationXylophone:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/NotificationXylophone.ogg \
+    $(MISSI_PATH)/media/audio/Dewdrops.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Dewdrops.ogg \
+    $(MISSI_PATH)/media/audio/Fireflies.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Fireflies.ogg \
+    $(MISSI_PATH)/media/audio/Morning.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Morning.ogg

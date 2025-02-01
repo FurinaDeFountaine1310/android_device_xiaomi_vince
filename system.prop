@@ -3,15 +3,6 @@
 #
 
 # Camera
-persist.camera.gyro.android=0
-persist.camera.gyro.disable=1
-persist.camera.iface.logs=0
-persist.camera.imglib.logs=0
-persist.camera.isp.clock.optmz=0
-persist.camera.isp.debug=0
-persist.camera.mct.debug=0
-persist.camera.sensor.debug=0
-persist.camera.stats.test=5
 persist.vendor.camera.display.lmax=1280x720
 persist.vendor.camera.display.umax=1920x1080
 vendor.camera.lowpower.record.enable=1
@@ -74,17 +65,8 @@ persist.wm.enable_remote_keyguard_animation=0
 ro.sys.sdcardfs=0
 
 #HWUI properties
-ro.hwui.texture_cache_size=72
-ro.hwui.layer_cache_size=48
-ro.hwui.r_buffer_cache_size=8
-ro.hwui.path_cache_size=32
-ro.hwui.gradient_cache_size=1
-ro.hwui.drop_shadow_cache_size=6
-ro.hwui.texture_cache_flushrate=0.4
-ro.hwui.text_small_cache_width=1024
-ro.hwui.text_small_cache_height=1024
-ro.hwui.text_large_cache_width=2048
-ro.hwui.text_large_cache_height=1024
+ro.hwui.disable_scissor_opt=false
+ro.zygote.disable_gl_preload=false
 debug.hwui.skia_atrace_enabled=false
 config.disable_rtt=true
 
@@ -131,16 +113,5 @@ persist.audio.button_jack.switch=0
 # disable modem dump
 persist.vendor.ssr.enable_ramdumps=0
 
-# Art Configurations
-dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5,6,7
-dalvik.vm.background-dex2oat-cpu-set=0,1,6,7
-dalvik.vm.dex2oat-threads=8
-dalvik.vm.madvise.vdexfile.size=0
-dalvik.vm.madvise.odexfile.size=0
-dalvik.vm.madvise.artfile.size=0
-
-# Set our Custom Audio 
-ro.config.ringtone=Galaxy_Bells.ogg
-ro.config.notification_sound=Whistle.ogg
-ro.config.alarm_alert=HomeComing.ogg
+# Set HyperOS 2.0 Wallpaper as Default
+ro.config.wallpaper=/system/vendor/etc/SoftLight.png
