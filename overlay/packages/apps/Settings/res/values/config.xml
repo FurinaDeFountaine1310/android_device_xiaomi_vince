@@ -43,4 +43,6 @@
     <bool name="config_show_system_update_settings">false</bool>
     <bool name="wifitrackerlib_enable_verbose_logging_for_userdebug">false</bool>
 
+    <!-- Android version screen, build maintainer -->
+    <string name="matrixx_maintainer">Rasyid</string>
 </resources>

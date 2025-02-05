@@ -26,7 +26,6 @@ $(call inherit-product, device/xiaomi/missi/missi.mk)
 
 # Flags
 TARGET_BOOT_ANIMATION_RES := 1080
-MISTOS_MAINTAINER := CitlaliItztli
 TARGET_SUPPORTS_64_BIT_APPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true

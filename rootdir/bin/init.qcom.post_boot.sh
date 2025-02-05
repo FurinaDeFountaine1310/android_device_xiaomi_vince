@@ -276,6 +276,18 @@ case "$target" in
                 echo 85 > /sys/devices/system/cpu/cpufreq/walt/hispeed_load
                 echo 652800 > /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
 
+		# Delete Cache
+		rm -rf /data/data/com.android.systemui/cache/*
+		rm -rf /data/data/com.android.systemui/code_cache/*
+		rm -rf /data/user_de/0/com.android.systemui/cache/*
+		rm -rf /data/user_de/0/com.android.systemui/code_cache/*
+		rm -rf /data/user/0/com.android.systemui/cache/*
+		rm -rf /data/user/0/com.android.systemui/code_cache/*
+		rm -rf /data/cache/*
+		rm -rf /data/system/package_cache/*
+		rm -rf /data/resource-cache/*
+		rm -rf /data/system/graphicsstats/*
+
                 # Bring up all cores online
                 echo 1 > /sys/devices/system/cpu/cpu0/online
                 echo 1 > /sys/devices/system/cpu/cpu1/online
